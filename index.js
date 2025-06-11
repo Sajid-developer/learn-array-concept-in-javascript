@@ -55,3 +55,94 @@ function wordScramble() {
 }
 
 wordScramble();
+
+
+const students = [
+    {
+        id: 1,
+        name: " Abhishek",
+        class: "10th",
+        rollNo: 12,
+        course: "PCM",
+        isActive: true
+    },
+    {
+        id: 2,
+        name: " Mukesh",
+        class: "10th",
+        rollNo: 34,
+        course: "PCM",
+        isActive: false
+    },
+    {
+        id: 3,
+        name: " Shahrukh",
+        class: "10th",
+        rollNo: 17,
+        course: "PCB",
+        isActive: true
+    },
+    {
+        id: 4,
+        name: " Kiara",
+        class: "10th",
+        rollNo: 20,
+        course: "PCM",
+        isActive: true
+    },
+    {
+        id: 5,
+        name: " Sansriti",
+        class: "10th",
+        rollNo: 14,
+        course: "PCB",
+        isActive: true
+    }
+];
+
+// make a new array from student array with name ✅
+// filter the name of student where status is active ✅
+// make new array only with name where status is active and course is PCM ✅
+
+console.table(students);
+// solution - Level 1
+
+const stuName = [];
+for (let i = 0; i < students.length; i++) {
+    if (students[i].isActive && students[i].course === "PCM") {
+        stuName.push(students[i].name);
+    }
+}
+// console.log(stuName);
+
+// Solution - Level 2
+
+students.forEach((stu) => {
+    if (stu.isActive && stu.course === "PCM") {
+        stuName.push(stu.name);
+    }
+});
+// console.log(stuName);
+
+// Solution - Level 3
+
+const newArray = students.filter(stu => stu.isActive).map(stu => stu.name);
+console.log('');
+console.log(newArray);
+console.log('');
+
+// document.write(`<h1> ${newArray.join(' | ')} <h1>`);
+
+
+// Callback function... ✅
+
+const greeting = (...params) => {
+    console.log(`Hi ${params[0]}`);
+    return params[1]();
+}
+
+const callMe = () => {
+    console.log("Welcome Sajid bhai 👉🏼 ! I'm callback function");
+}
+
+greeting('Sajid', callMe);
