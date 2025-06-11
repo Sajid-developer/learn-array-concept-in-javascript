@@ -2,6 +2,8 @@ console.log("App running successfully...");
 
 // array concept with javascript ✅
 
+
+// declared and initialized a number array
 const nums = [23, 3, 3, 7, 8, 7, 3, , 14, 7, 65, 43, 12, 97, 67, 76, 74, 65, 45, 70, 32, 39, 63];
 
 function arrProb() {
@@ -34,3 +36,22 @@ function arrProb() {
 
 }
 arrProb();
+
+// declared and initialized words array
+const words = ['good', 'better', 'best'];
+
+function wordScramble() {
+    let randNum = Math.floor(Math.random() * words.length);
+    let randWord = words[randNum];
+    let sWord = randWord.split('');
+    console.log(sWord);
+    console.log(sWord.length);
+    let newWord;
+
+    for (let i = 0; i < sWord.length; i++) {
+        newWord = sWord.join('');
+    }
+    console.log(newWord);
+}
+
+wordScramble();
