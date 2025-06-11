@@ -36,7 +36,12 @@ console.log(fruits);
 fruits.splice(3, 2);
 console.log(fruits);
 
-// 7. Make new array of characters from a string using split method....
+// 7. keep only the items of array from specified index 
+
+fruits.slice(1, 4);
+console.log(fruits);
+
+// 8. Make new array of characters from a string using split method....
 
 let randFruit = Math.floor(Math.random() * fruits.length);
 let splitWord = fruits[randFruit].split("");
