@@ -1,7 +1,7 @@
-# Learn Array Concept In JavaScript
+# 🌟Learn Array Concept In JavaScript
 An exercise to learn about array concept in JavaScript. 🧑🏼‍💻
 
-## Basic code
+## 🧑🏼‍💻Basic code
 
 ```javascript
 
