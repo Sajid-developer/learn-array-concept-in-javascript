@@ -3,7 +3,8 @@ An exercise to learn about array concept in JavaScript. 🧑🏼‍💻
 
 ## Basic code
 
-```javascript 
+```javascript
+
 
 // declared and initialized array of fruits
 const fruits = ["apple", "orange", "grape", "guava", "pineapple", "banana", "papaya"];
@@ -66,5 +67,6 @@ function shuffleFruits() {
 }
 
 shuffleFruits();
+
 
 ```
